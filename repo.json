@@ -1,0 +1,9 @@
+{
+  "$meta": {
+    "name": "Message Logger",
+    "description": "Kettu plugin repository for Message Logger (deleted + edited messages)."
+  },
+  "messagelogger": {
+    "version": "1.0.0"
+  }
+}

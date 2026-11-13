@@ -1,0 +1,11 @@
+{
+  "name": "Message Logger",
+  "description": "Keeps deleted and edited messages visible — deleted messages stay in place in the chat, edits keep their history. View the log in the plugin settings.",
+  "authors": [
+    {
+      "name": "dolanexeee"
+    }
+  ],
+  "main": "index.js",
+  "hash": "c34b47fe74d6eb167c15a099adf006ade724e4b7aa44f0ab5ad6978e36f6fefb"
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Message Logger — Kettu plugin</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", sans-serif; background: #111214; color: #dbdee1; margin: 0; padding: 32px 20px; }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 26px; margin: 0 0 4px; }
+  p.sub { color: #b5bac1; margin: 0 0 24px; }
+  code { background: #2b2d31; padding: 2px 6px; border-radius: 4px; word-break: break-all; }
+  .url { background: #1e1f22; border: 1px solid #4f545c; border-radius: 8px; padding: 14px; font-size: 15px; margin: 0 0 24px; }
+  h2 { font-size: 17px; margin: 24px 0 8px; }
+  ul { line-height: 1.7; padding-left: 20px; }
+  a { color: #5865f2; }
+</style>
+</head>
+<body>
+<main>
+  <h1>🗑️ Message Logger</h1>
+  <p class="sub">Kettu plugin for iOS — keeps deleted and edited Discord messages visible.</p>
+
+  <h2>Install</h2>
+  <p>In Kettu: <b>Settings → Plugins → Install a plugin</b>, paste this URL:</p>
+  <p class="url"><code>https://dolanexeee.github.io/kettu-plugin-messagelogger/</code></p>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Deleted messages stay visible in place in the chat (the delete dispatch is blocked), with a toast confirming the catch.</li>
+    <li>Edited messages keep their history — up to 20 previous versions each.</li>
+    <li>Open the plugin's settings page to browse the full log (deleted + edited), with Refresh and Clear log. Up to 500 messages, persisted across restarts.</li>
+  </ul>
+
+  <h2>Honest limits</h2>
+  <ul>
+    <li>Only messages seen while the logger is running can be kept — nothing deleted before install/enable, or while the app was closed.</li>
+    <li>No red "deleted" badge on the message itself (the RN message renderer could not be verified for Discord 353.0). The message staying put + the toast + this log is the marking.</li>
+    <li>Kept messages disappear again if the channel is re-fetched from the server.</li>
+    <li>Not yet tested on a real iPhone — syntax- and behaviour-tested with a mock dispatcher only.</li>
+  </ul>
+
+  <p><a href="https://github.com/dolanexeee/kettu-plugin-messagelogger">Source on GitHub</a></p>
+</main>
+</body>
+</html>
